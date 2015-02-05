@@ -1,6 +1,6 @@
 import java.lang.Integer;
 
-public class Chapter1 {
+class Chapter1 {
     public static void main (String[] args) {
         //Print the sum of all odd numbers from 1 to 100
         int num = 1;
