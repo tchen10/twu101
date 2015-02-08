@@ -5,12 +5,12 @@ class Ch3Rectangles {
     int height;
     int width;
 
-    int area() {
+    public int area() {
         return height * width;
     }
 }
 
-class Ch3 {
+public class Ch3 {
     public static void main (String[] args) {
         Ch3Rectangles [] rectangles = new Ch3Rectangles[5];
 
@@ -22,12 +22,12 @@ class Ch3 {
             rectangles[x].height = x + 1;
             rectangles[x].width = x + 2;
             totalArea = totalArea + rectangles[x].area();
-            x += 1;
+            x++;
         }
 
         int average = totalArea / 5;
 
-        System.out.println(average);
+        System.out.println("Average Area: " + average);
 
     }
 

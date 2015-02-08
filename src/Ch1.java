@@ -10,9 +10,9 @@ class Ch1 {
             if (num % 2 == 1) {
                 sum = sum + num;
             }
-            num += 1;
+            num++;
         }
 
-        System.out.println(sum);
+        System.out.println("Sum: " + sum);
     }
 }

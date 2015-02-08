@@ -20,7 +20,7 @@ class Ch4Rectangles {
     }
 }
 
-class Ch4 {
+public class Ch4 {
     public static void main (String[] args) {
         Ch4Rectangles [] rectangles = new Ch4Rectangles[5];
 
@@ -34,11 +34,11 @@ class Ch4 {
             rectangles[x] = new Ch4Rectangles(height, width);
             totalArea = totalArea + rectangles[x].area();
             totalPerimeter = totalPerimeter + rectangles[x].perimeter();
-            x += 1;
+            x++;
         }
 
-        System.out.println(totalArea);
-        System.out.println(totalPerimeter);
+        System.out.println("Total Area: " + totalArea);
+        System.out.println("Total Perimeter: " + totalPerimeter);
 
     }
 

@@ -3,19 +3,19 @@
 
 class Ch2Counter {
 
-    int count = 0;
+    private int count = 0;
 
     void increment() {
-        count += 1;
+        count++;
     }
 
     void total() {
-        System.out.println(count);
+        System.out.println("Total: " + count);
     }
 
 }
 
-class Ch2 {
+public class Ch2 {
     public static void main (String[] args) {
 
         Ch2Counter counter = new Ch2Counter();
