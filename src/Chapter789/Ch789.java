@@ -29,7 +29,7 @@ public class Ch789 {
 }
 
 class Monster {
-    int damage;
+    private int damage;
 
     public void takeDamage(int amount) {
         damage += amount;
