@@ -1,12 +1,10 @@
-// Write a program that chooses a random number between 1 and 100.
-// Then asks the user to enter a guess. If they guess right then tell them they win,
-// otherwise tell them if they guessed too high or low.
-// Keep asking the user to guess until they get the right answer.
-// Use classes to separate the different concerns of this program.
+// Create a new version of the Chapter 5 problem where you also record all of the users guesses
+// and print them out once they guess correctly. Use an ArrayList to store the guesses.
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
-public class Ch5 {
+public class Ch6 {
     public static void main (String[] args) {
         Game game = new Game();
         game.setUpGame();
@@ -17,23 +15,33 @@ public class Ch5 {
 class Game {
     private int answer;
     private boolean isPlaying = false;
+    private ArrayList<Integer> guessedList = new ArrayList<Integer>();
 
     public void setUpGame() {
         isPlaying = true;
         answer = (int) (Math.random() * 100);
         System.out.println("We picked a number between 1 and 100. You get to try and guess the number.");
-        System.out.println("We'll tell you if you're too high or too low. Good Luck!");
+        System.out.println("We'll tell you if your guess is too high or too low. Good Luck!");
     }
 
     public void playGame() {
         while (isPlaying) {
             Guess newGuess = new Guess();
-            newGuess.getUserGuess();
+            guessedList.add(newGuess.getUserGuess());
             if (newGuess.checkUserGuess(answer)) {
                 isPlaying = false;
-                System.out.println("You win! Game over.");
             }
         }
+        System.out.println("You win!");
+        printGuessedList();
+    }
+
+    public void printGuessedList() {
+        System.out.print("Your guesses: ");
+        for (int guessedAnswer: guessedList) {
+            System.out.print(guessedAnswer + " ");
+        }
+        System.out.print("\n");
     }
 }
 
@@ -60,4 +68,5 @@ class Guess {
         }
         return isAnswer;
     }
+
 }
