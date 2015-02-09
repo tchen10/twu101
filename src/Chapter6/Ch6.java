@@ -1,6 +1,5 @@
 // Create a new version of the Chapter 5 problem where you also record all of the users guesses
 // and print them out once they guess correctly. Use an ArrayList to store the guesses.
-
 import java.util.Scanner;
 import java.util.ArrayList;
 

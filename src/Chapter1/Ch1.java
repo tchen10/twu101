@@ -1,4 +1,3 @@
-import java.lang.Integer;
 //Print the sum of all odd numbers from 1 to 100
 class Ch1 {
     public static void main (String[] args) {
