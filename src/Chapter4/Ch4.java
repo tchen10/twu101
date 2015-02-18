@@ -2,23 +2,6 @@
 // Rectangle constructor and initialize the instance variables there. Add a perimeter() method
 // to Rectangle. Print the total area of all rectangles. Print the total perimeter of all rectangles.
 
-class Ch4Rectangles {
-    int height;
-    int width;
-
-    public Ch4Rectangles(int height, int width) {
-        this.height = height;
-        this.width = width;
-        }
-
-    int area() {
-        return height * width;
-    }
-
-    int perimeter() {
-        return (height * 2) + (width * 2);
-    }
-}
 
 public class Ch4 {
     public static void main (String[] args) {
@@ -42,4 +25,22 @@ public class Ch4 {
 
     }
 
+}
+
+class Ch4Rectangles {
+    int height;
+    int width;
+
+    public Ch4Rectangles(int height, int width) {
+        this.height = height;
+        this.width = width;
+    }
+
+    int area() {
+        return height * width;
+    }
+
+    int perimeter() {
+        return (height * 2) + (width * 2);
+    }
 }
