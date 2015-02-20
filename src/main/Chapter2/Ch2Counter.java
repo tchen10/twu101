@@ -1,12 +1,12 @@
-class Ch2Counter {
+public class Ch2Counter {
 
     private int count = 0;
 
-    void increment() {
+    public void increment() {
         count++;
     }
 
-    void total() {
+    public void total() {
         System.out.println("Total: " + count);
     }
 

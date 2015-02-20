@@ -1,4 +1,4 @@
-class Troll implements Monster {
+public class Troll implements Monster {
     private int damage = 0;
 
     public String name() {

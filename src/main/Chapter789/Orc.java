@@ -1,4 +1,4 @@
-class Orc implements Monster{
+public class Orc implements Monster{
     private int damage = 0;
 
     public String name() {

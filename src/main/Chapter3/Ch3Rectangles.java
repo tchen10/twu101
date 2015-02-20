@@ -1,4 +1,4 @@
-class Ch3Rectangles {
+public class Ch3Rectangles {
     private int height;
     private int width;
 
