@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Ch6Guess {
     private int userGuess;
-    private boolean isAnswer = false;
 
     public int getUserGuess() {
         Scanner userInput = new Scanner(System.in);
@@ -11,16 +10,17 @@ public class Ch6Guess {
         return userGuess;
     }
 
-    public boolean checkUserGuess (int answer) {
+    public String checkUserGuess (int answer) {
+        String guessState = "";
         if (userGuess > answer) {
-            System.out.println("Your guess is too high.");
+            guessState = "too high";
         }
         if (userGuess < answer) {
-            System.out.println("Your guess is too low.");
+            guessState = "too low";
         }
         if (userGuess == answer) {
-            isAnswer = true;
+            guessState = "correct";
         }
-        return isAnswer;
+        return guessState;
     }
 }
