@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TWU101.iml" filepath="$PROJECT_DIR$/TWU101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/twu101.iml" filepath="$PROJECT_DIR$/src/twu101.iml" />
     </modules>
   </component>
 </project>

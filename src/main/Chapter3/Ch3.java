@@ -1,15 +1,6 @@
 // Create an array of 5 Rectangles (each with height and width instance variables and an area() method).
 // Find the average area of the rectangles.
 
-class Ch3Rectangles {
-    int height;
-    int width;
-
-    public int area() {
-        return height * width;
-    }
-}
-
 public class Ch3 {
     public static void main (String[] args) {
         Ch3Rectangles [] rectangles = new Ch3Rectangles[5];
@@ -18,9 +9,9 @@ public class Ch3 {
         int totalArea = 0;
 
         while (x < 5) {
-            rectangles[x] = new Ch3Rectangles();
-            rectangles[x].height = x + 1;
-            rectangles[x].width = x + 2;
+            int height = x + 1;
+            int width = x + 2;
+            rectangles[x] = new Ch3Rectangles(height, width);
             totalArea = totalArea + rectangles[x].area();
             x++;
         }

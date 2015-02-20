@@ -26,21 +26,3 @@ public class Ch4 {
     }
 
 }
-
-class Ch4Rectangles {
-    int height;
-    int width;
-
-    public Ch4Rectangles(int height, int width) {
-        this.height = height;
-        this.width = width;
-    }
-
-    int area() {
-        return height * width;
-    }
-
-    int perimeter() {
-        return (height * 2) + (width * 2);
-    }
-}
